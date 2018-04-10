@@ -23,8 +23,6 @@ class ApplicationTest extends TestCase {
             ->setImageSmall("");
     }
     public function test_criar_um_aplicativo(){
-
-
         $this->assertEquals(1, $this->application->getId());
         $this->assertEquals("Descubra seu antes e depois", $this->application->getTitle());
         $this->assertEquals("Você descobrirá o seu antes e o seu depois", $this->application->getText());

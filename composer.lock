@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc491f5416c4f8e0e433b1cdeabea9e3",
+    "content-hash": "730d718c128a2edb571b219c36a4aabf",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2037,6 +2037,62 @@
             "time": "2017-09-21T16:29:17+00:00"
         },
         {
+            "name": "intervention/zodiac",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/zodiac.git",
+                "reference": "51ef604121386ca597f2ee35b8ced6648bd7090c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/zodiac/zipball/51ef604121386ca597f2ee35b8ced6648bd7090c",
+                "reference": "51ef604121386ca597f2ee35b8ced6648bd7090c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/translation": "~4.0|~5.0",
+                "nesbot/carbon": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Intervention\\Zodiac\\ZodiacServiceProvider"
+                    ],
+                    "aliases": {
+                        "Zodiac": "Intervention\\Zodiac\\Facades\\Zodiac"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Zodiac\\": "src/Intervention/Zodiac"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@olivervogel.com",
+                    "homepage": "http://olivervogel.com/"
+                }
+            ],
+            "description": "Zodiac sign calculator",
+            "keywords": [
+                "zodiac"
+            ],
+            "time": "2017-07-20T14:11:51+00:00"
+        },
+        {
             "name": "laravel-doctrine/orm",
             "version": "1.4.5",
             "source": {
@@ -2204,6 +2260,44 @@
                 "lumen"
             ],
             "time": "2018-03-27T16:21:45+00:00"
+        },
+        {
+            "name": "mlntn/lumen-artisan-serve",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mlntn/lumen-artisan-serve.git",
+                "reference": "3e3850c6c3b26eda48f38a02e73a72aa96b0d8f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mlntn/lumen-artisan-serve/zipball/3e3850c6c3b26eda48f38a02e73a72aa96b0d8f2",
+                "reference": "3e3850c6c3b26eda48f38a02e73a72aa96b0d8f2",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jared Mellentine",
+                    "email": "jared@mellentine.com"
+                }
+            ],
+            "description": "artisan serve for Lumen projects",
+            "homepage": "http://github.com/mlntn/lumen-artisan-serve",
+            "keywords": [
+                "artisan",
+                "lumen"
+            ],
+            "time": "2017-09-22T16:09:43+00:00"
         },
         {
             "name": "monolog/monolog",
