@@ -1,8 +1,10 @@
 <?php
 
+namespace Tests;
+
 use Monetify\Entities\User\User;
 
-class UserTest extends PHPUnit\Framework\TestCase {
+class UserTest extends \PHPUnit\Framework\TestCase {
 
 
     public function testCriaUsuarioWithDateFromObject() {

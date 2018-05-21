@@ -1,5 +1,5 @@
 <?php
-namespace Tests\Service\Application;
+namespace Tests;
 
 use Monetify\Entities\Application\Application;
 use Monetify\Entities\Application\Components\Background\BackgroundItem;
@@ -17,8 +17,8 @@ class ApplicationServiceTest extends TestCase{
 
     public function __construct(?string $name = null, array $data = [], string $dataName = '') {
         parent::__construct($name, $data, $dataName);
-        $this->resources = __DIR__.'/../../resources';
-        $this->tmp = __DIR__.'/../../tmp';
+        $this->resources = __DIR__ . '/resources';
+        $this->tmp = __DIR__ . '/tmp';
     }
 
     public function testCreateService1(){
